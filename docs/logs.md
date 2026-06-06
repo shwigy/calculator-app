@@ -18,3 +18,6 @@ added outputs to menu options depending on what user chooses. checkpoint before 
 
 >7
 added option 1 functionality and allow user inputs to use calculator program
+
+>8
+created code for foolproofing and errors occuring. changed terminal user interface slightly

@@ -39,7 +39,7 @@ function displayHistory() {
         console.log("Calculation history is empty");
         return;
     }
-    console.log("[History Log]"); 
+    console.log("[[[History Log]]]"); 
     for (let i = 0; i < calculationHistory.length; i++) { // For loop to list out every calculation in the array
         console.log(calculationHistory[i]);
     }
@@ -48,10 +48,10 @@ function displayHistory() {
 /*
 /   3. USER INTERFACE
 */
-console.log("[Brian's Simple Calculator]")
+console.log("-----Brian's Simple Calculator-----")
 
 while (true) { // While loop to enable the opportunity to do multiple calculations in one session and provide a user interface menu for options
-    console.log("Choose an option");
+    console.log("[[[Choose an option]]]");
     console.log("1. Begin calculation");
     console.log("2. View calculation history");
     console.log("3. Exit program");
@@ -69,11 +69,23 @@ while (true) { // While loop to enable the opportunity to do multiple calculatio
     }
 
     if (menuChoice === "1") {
-        console.log("[New Calculation]");
+        console.log("[[[New Calculation]]]");
         const operation = prompt("Choose an operation (add, subtract, multiply, divide): ").trim().toLowerCase();
+
+        // checking if user input is NOT one of the options provided and will print error message and restart loop
+        if (!["add", "subtract", "multiply", "divide"].includes(operation)) {
+            console.log("Error: Invalid operation! Returning to menu.");
+            continue;
+        }
  
         const num1 = parseFloat(prompt("Enter first number: "));
         const num2 = parseFloat(prompt("Enter second number: "));
+
+        // using isNaN to validate that the user input numbers only, otherwise restart loop
+        if (isNaN(num1) || isNaN(num2)) { 
+            console.log("Error: Invalid input! Returning to menu.")
+            continue;
+        }
 
 
         let result;
@@ -98,4 +110,5 @@ while (true) { // While loop to enable the opportunity to do multiple calculatio
 
         continue;
     }
+    console.log("Invalid input!!!");
 }
