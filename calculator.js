@@ -45,3 +45,17 @@ function displayHistory() {
     }
 }
 
+/*
+/   3. USER INTERFACE
+*/
+console.log("[Brian's Simple Calculator]")
+
+while (true) {
+    console.log("Choose an option");
+    console.log("1. Begin calculation");
+    console.log("2. View calculation history");
+    console.log("3. Exit program");
+
+    const menuChoice = prompt("Enter option (1, 2, or 3): ").trim();
+}
+

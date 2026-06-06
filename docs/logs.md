@@ -9,3 +9,6 @@ added calculation logic using functions
 
 >4
 added calculation history logic to show history array upon request
+
+>5
+added a user interface menu with options using a while loop to enable the option for multiple calculation in one session
