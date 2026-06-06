@@ -12,3 +12,6 @@ added calculation history logic to show history array upon request
 
 >5
 added a user interface menu with options using a while loop to enable the option for multiple calculation in one session
+
+>6
+added outputs to menu options depending on what user chooses. checkpoint before any bugs occur

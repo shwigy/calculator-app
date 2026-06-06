@@ -57,5 +57,21 @@ while (true) {
     console.log("3. Exit program");
 
     const menuChoice = prompt("Enter option (1, 2, or 3): ").trim();
-}
 
+    if (menuChoice === "3") {
+        console.log("bye bye!");
+        break;
+    }
+
+    if (menuChoice === "2") {
+        displayHistory();
+        continue;
+    }
+
+    if (menuChoice === "1") {
+        console.log("[New Calculation]");
+        const operation = prompt("Choose an operation (add, subtract, multiply, divide").trim().toLowerCase();
+
+        
+    }
+}
