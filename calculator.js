@@ -21,3 +21,27 @@ function divide(num1, num2) {
     }
     return num1 / num2
 }
+
+
+/*
+/   2. HISTORY LOGIC
+*/
+const calculationHistory = []
+
+function saveCalculation(operation, num1, num2, result) {
+    calculationHistory.push ({
+        operation, num1, num2, result
+    });
+}
+
+function displayHistory() {
+    if (calculationHistory.length === 0) {
+        console.log("Calculation history is empty");
+        return;
+    }
+    console.log("[History Log]");
+    for (let i = 0; i < calculationHistory.length; i++) {
+        console.log(calculationHistory[i]);
+    }
+}
+
