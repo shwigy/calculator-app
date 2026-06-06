@@ -1,0 +1,23 @@
+const prompt = require("prompt-sync")(); // Input tool to allow user input for calculation functions
+
+/*
+/  1. CALCULATOR LOGIC
+*/
+function add(num1, num2) {
+    return num1 + num2
+}
+
+function subtract(num1, num2) {
+    return num1 - num2
+}
+
+function multiply(num1, num2) {
+    return num1 * num2
+}
+
+function divide(num1, num2) {
+    if (num2 === 0) {
+        return "Error: Cannot divide by zero"
+    }
+    return num1 / num2
+}
