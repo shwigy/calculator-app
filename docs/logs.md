@@ -15,3 +15,6 @@ added a user interface menu with options using a while loop to enable the option
 
 >6
 added outputs to menu options depending on what user chooses. checkpoint before any bugs occur
+
+>7
+added option 1 functionality and allow user inputs to use calculator program
